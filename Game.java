@@ -20,15 +20,18 @@ public class Game {
 		while(running) {
 			if(crossTurn) {
 				System.out.println("Cross turn.");
+				System.out.print("X value? ");
 				int xToChange = scan.nextInt();
+				System.out.print("Y value? ");
 				int yToChange = scan.nextInt();
 				if(field[yToChange][xToChange] != "X" && field[yToChange][xToChange] != "O")
 					field[yToChange][xToChange] = "X";
 				crossTurn = false;
-				
 			} else {
 				System.out.println("Circle turn.");
+				System.out.print("X value? ");
 				int xToChange = scan.nextInt();
+				System.out.print("Y value? ");
 				int yToChange = scan.nextInt();
 				if(field[yToChange][xToChange] != "X" && field[yToChange][xToChange] != "O")
 					field[yToChange][xToChange] = "O";
