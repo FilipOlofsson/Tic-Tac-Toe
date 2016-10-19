@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Game {
 
 	public static String[][] field = new String[][] {
-		{"@", "1", "2", "3"},
-		{"1", " ", " ", " "},
-		{"2", " ", " ", " "},
-		{"3", " ", " ", " "}
+		{"@ ", "1 ", "2 ", "3 "},
+		{"1 ", "  ", "  ", "  "},
+		{"2 ", "  ", "  ", "  "},
+		{"3 ", "  ", "  ", "  "}
 	};
 	
 	
@@ -24,8 +24,8 @@ public class Game {
 				int xToChange = scan.nextInt();
 				System.out.print("Y value? ");
 				int yToChange = scan.nextInt();
-				if(field[yToChange][xToChange] != "X" && field[yToChange][xToChange] != "O")
-					field[yToChange][xToChange] = "X";
+				if(field[yToChange][xToChange] != "X " && field[yToChange][xToChange] != "O ")
+					field[yToChange][xToChange] = "X ";
 				crossTurn = false;
 			} else {
 				System.out.println("Circle turn.");
@@ -33,8 +33,8 @@ public class Game {
 				int xToChange = scan.nextInt();
 				System.out.print("Y value? ");
 				int yToChange = scan.nextInt();
-				if(field[yToChange][xToChange] != "X" && field[yToChange][xToChange] != "O")
-					field[yToChange][xToChange] = "O";
+				if(field[yToChange][xToChange] != "X " && field[yToChange][xToChange] != "O ")
+					field[yToChange][xToChange] = "O ";
 				crossTurn = true;
 			}
 			draw();
